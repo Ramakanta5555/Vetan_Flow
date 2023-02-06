@@ -59,7 +59,7 @@ public class BaseClass {
 		extent = new ExtentReports();
 		String reportName = "ExtentReport";
       	String failedReportName = "FailedExtentReport";
-      	ExtentSparkReporter spark = new ExtentSparkReporter(System.getProperty("user.dir")+ "/test-output/"+repName);
+      	ExtentSparkReporter spark = new ExtentSparkReporter(System.getProperty("user.dir")+ "/test-output/extentReport"+repName);
       	ExtentSparkReporter failedspark = new ExtentSparkReporter(System.getProperty("user.dir")+ "/test-output/"+failedReportName).filter().statusFilter().as(new Status []{Status.FAIL}).apply();
       	failedspark.config().setDocumentTitle("Failed Tests");
       	// spark.config().setTheme(Theme.DARK);
