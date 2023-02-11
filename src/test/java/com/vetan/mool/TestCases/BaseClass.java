@@ -3,6 +3,7 @@ package com.vetan.mool.TestCases;
 import java.io.File;  
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -57,9 +58,8 @@ public class BaseClass {
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());//time stamp
 		String repName="Test-Report-"+timeStamp+".html";
 		extent = new ExtentReports();
-		String reportName = "ExtentReport";
       	String failedReportName = "FailedExtentReport";
-      	ExtentSparkReporter spark = new ExtentSparkReporter(System.getProperty("user.dir")+ "/test-output/extentReport"+repName);
+      	ExtentSparkReporter spark = new ExtentSparkReporter(System.getProperty("user.dir")+ "/test-output/extentReport/"+repName);
       	ExtentSparkReporter failedspark = new ExtentSparkReporter(System.getProperty("user.dir")+ "/test-output/"+failedReportName).filter().statusFilter().as(new Status []{Status.FAIL}).apply();
       	failedspark.config().setDocumentTitle("Failed Tests");
       	// spark.config().setTheme(Theme.DARK);
@@ -102,6 +102,12 @@ public class BaseClass {
 		logger.info("Screenshot taken");
 	}
 	
+	//Implicit Wait
+
+	public void implicitlyWait()
+	{
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+	}
 
 	//Scrolldown
 

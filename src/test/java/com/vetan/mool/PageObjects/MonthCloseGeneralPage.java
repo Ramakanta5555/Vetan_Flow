@@ -265,9 +265,56 @@ public class MonthCloseGeneralPage {
 	}
 
 	
+	//Other_Allowances
 
+	@FindBy(xpath = "(//div[contains(text(),'Other Allowances')])[1]")
+	@CacheLookup
+	WebElement btnOtherAllowances;
 
+	public void clickbtnOtherAllowances()
+	{
+		btnOtherAllowances.click();
+	}
 
+	//Awards
+
+	@FindBy(xpath = "(//div[@class='ant-select-item-option-content'][normalize-space()='Awards'])[1]")
+	@CacheLookup
+	WebElement btnAwards;
+
+	public void clickbtnAwards()
+	{
+		btnAwards.click();
+	}
+
+	//Rewards
+
+	@FindBy(xpath = "(//div[@class='ant-select-item-option-content'][normalize-space()='Rewards'])[1]")
+	@CacheLookup
+	WebElement btnReward;
+
+	public void clickbtnRewards()
+	{
+		btnReward.click();
+	}
+
+	@FindBy(xpath = "(//div[contains(text(),'Leave Encashment')])[1]")
+	@CacheLookup
+	WebElement btnLeaveEncashment;
+
+	public void clickbtnLeaveEncashment()
+	{
+		btnLeaveEncashment.click();
+	}
+
+	@FindBy(xpath = "(//div[contains(text(),'Attendance Bonus')])[1]")
+	@CacheLookup
+	WebElement btnAttendanceBonus;
+
+	public void clickbtnAttendanceBonus()
+	{
+		btnAttendanceBonus.click();
+	}
 
 
 }

@@ -54,7 +54,7 @@
 		<useManifestOnlyJar>false</useManifestOnlyJar>  
 		<useSystemClassLoader>false</useSystemClassLoader>
           <forkMode>once</forkMode>
-		  <fork>true</fork>
+		  <!-- <fork>true</fork> -->
     <!--  Here you can give the xml file name where you storing your testcases -->
             <!-- <suiteXmlFile>employeeProfilePageTestNG.xml</suiteXmlFile> -->
             <!-- <suiteXmlFile>testNG.xml</suiteXmlFile> -->
@@ -67,8 +67,8 @@
 			<artifactId>maven-compiler-plugin</artifactId>
 			<version>3.10.1</version>
 			<configuration>
-			<source>1.7</source>
-			<target>1.7</target>
+			<source>1.8</source>
+			<target>1.8</target>
 			</configuration>
 	  </plugin>	
         <!-- <plugin>
@@ -193,7 +193,7 @@
 	<dependency>
    		<groupId>org.projectlombok</groupId>
     	<artifactId>lombok</artifactId>
-    	<version>1.18.16</version>
+    	<version>1.16.22</version>
 	</dependency>
 
 
