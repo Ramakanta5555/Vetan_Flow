@@ -89,21 +89,10 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
         test.fail("Error: unable to Add Awards");
       }
 
-      mg.clickbtnPayrollHistory();
+      //Run Payroll
+        
+      RunPayroll();
       Thread.sleep(2000);
-
-      //Need to change Per Month
-      mg.clickbtnPayrollFebruary();  //Change the xpath and Month for every month
-      Thread.sleep(2000);
-
-      mg.clickbtnRunPayroll();
-      Thread.sleep(2000);
-
-      mg.clickbtncheckbox();
-      Thread.sleep(2000);
-
-      mg.clickbtnRunPayrollFinal();
-      Thread.sleep(3000);
 
       if(driver.getPageSource().contains("Payroll has been processed successfully") && driver.getPageSource().contains("Ramakanta Samal"))
       {
@@ -118,17 +107,10 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
         test.fail("Unable to run the Payroll");
       }
 
-      mg.clickbtnEmployee();
+      //Employee Payslip
+
+      Employee_Payslip();
       Thread.sleep(2000);
-
-      mg.clickbtnRamakantaSamalEmployee();
-      Thread.sleep(20000);
-
-      mg.clickbtnPayslipandForms();
-      Thread.sleep(2000);
-
-      mg.clickbtnViewFebPayslip();
-      Thread.sleep(10000);
       
       if(driver.getPageSource().contains("Award") && driver.getPageSource().contains("2000"))
       {
@@ -310,10 +292,11 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
         test.fail("Error: unable to Add Attendance_Bonus");
       }
       try {
-        mg.clickbtnPayrollHistory();
+
+      mg.clickbtnPayrollHistory();
       Thread.sleep(2000);
 
-      mg.clickbtnPayrollFebruary();  //Change the xpath and Month for every month
+      mg.clickbtnPayrollMarch();  //Change the xpath and Month for every month
       Thread.sleep(2000);
 
       mg.clickbtnRunPayroll();
@@ -564,21 +547,10 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
         test.fail("Error: unable to Add incentive");
       }
 
-      mg.clickbtnPayrollHistory();
+      //Run Payroll
+        
+      RunPayroll();
       Thread.sleep(2000);
-
-      //Need to change Per Month
-      mg.clickbtnPayrollFebruary();
-      Thread.sleep(2000);
-
-      mg.clickbtnRunPayroll();
-      Thread.sleep(2000);
-
-      mg.clickbtncheckbox();
-      Thread.sleep(2000);
-
-      mg.clickbtnRunPayrollFinal();
-      Thread.sleep(5000);
 
       if(driver.getPageSource().contains("Payroll has been processed successfully") && driver.getPageSource().contains("Ramakanta Samal"))
       {
@@ -593,17 +565,10 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
         test.fail("Unable to run the Payroll");
       }
 
-      mg.clickbtnEmployee();
+      //Employee Payslip
+
+      Employee_Payslip();
       Thread.sleep(2000);
-
-      mg.clickbtnRamakantaSamalEmployee();
-      Thread.sleep(20000);
-
-      mg.clickbtnPayslipandForms();
-      Thread.sleep(2000);
-
-      mg.clickbtnViewFebPayslip();
-      Thread.sleep(10000);
       
       if(driver.getPageSource().contains("Incentive") && driver.getPageSource().contains("2000"))
       {
@@ -751,21 +716,10 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
         test.fail("Error: unable to Add Variable Salary");
       }
 
-      mg.clickbtnPayrollHistory();
+      //Run Payroll
+        
+      RunPayroll();
       Thread.sleep(2000);
-
-      //Need to change Per Month
-      mg.clickbtnPayrollFebruary();
-      Thread.sleep(2000);
-
-      mg.clickbtnRunPayroll();
-      Thread.sleep(2000);
-
-      mg.clickbtncheckbox();
-      Thread.sleep(2000);
-
-      mg.clickbtnRunPayrollFinal();
-      Thread.sleep(3000);
 
       if(driver.getPageSource().contains("Payroll has been processed successfully") && driver.getPageSource().contains("Ramakanta Samal"))
       {
@@ -780,17 +734,10 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
         test.fail("Unable to run the Payroll");
       }
 
-      mg.clickbtnEmployee();
+      //Employee Payslip
+
+      Employee_Payslip();
       Thread.sleep(2000);
-
-      mg.clickbtnRamakantaSamalEmployee();
-      Thread.sleep(20000);
-
-      mg.clickbtnPayslipandForms();
-      Thread.sleep(2000);
-
-      mg.clickbtnViewFebPayslip();
-      Thread.sleep(10000);
       
       if(driver.getPageSource().contains("Variable_Salary") && driver.getPageSource().contains("2000"))
       {
@@ -938,21 +885,10 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
         test.fail("Error: unable to Add Other_Allowances");
       }
 
-      mg.clickbtnPayrollHistory();
+      //Run Payroll
+        
+      RunPayroll();
       Thread.sleep(2000);
-
-      //Need to change Per Month
-      mg.clickbtnPayrollFebruary();  //Change the xpath and Month for every month
-      Thread.sleep(2000);
-
-      mg.clickbtnRunPayroll();
-      Thread.sleep(2000);
-
-      mg.clickbtncheckbox();
-      Thread.sleep(2000);
-
-      mg.clickbtnRunPayrollFinal();
-      Thread.sleep(3000);
 
       if(driver.getPageSource().contains("Payroll has been processed successfully") && driver.getPageSource().contains("Ramakanta Samal"))
       {
@@ -967,17 +903,10 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
         test.fail("Unable to run the Payroll");
       }
 
-      mg.clickbtnEmployee();
+      //Employee Payslip
+
+      Employee_Payslip();
       Thread.sleep(2000);
-
-      mg.clickbtnRamakantaSamalEmployee();
-      Thread.sleep(20000);
-
-      mg.clickbtnPayslipandForms();
-      Thread.sleep(2000);
-
-      mg.clickbtnViewFebPayslip();
-      Thread.sleep(10000);
       
       if(driver.getPageSource().contains("Other_Allowance") && driver.getPageSource().contains("2000"))
       {
@@ -1125,21 +1054,10 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
         test.fail("Error: unable to Add Rewards");
       }
 
-      mg.clickbtnPayrollHistory();
+      //Run Payroll
+        
+      RunPayroll();
       Thread.sleep(2000);
-
-      //Need to change Per Month
-      mg.clickbtnPayrollFebruary();  //Change the xpath and Month for every month
-      Thread.sleep(2000);
-
-      mg.clickbtnRunPayroll();
-      Thread.sleep(2000);
-
-      mg.clickbtncheckbox();
-      Thread.sleep(2000);
-
-      mg.clickbtnRunPayrollFinal();
-      Thread.sleep(3000);
 
       if(driver.getPageSource().contains("Payroll has been processed successfully") && driver.getPageSource().contains("Ramakanta Samal"))
       {
@@ -1154,17 +1072,10 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
         test.fail("Unable to run the Payroll");
       }
 
-      mg.clickbtnEmployee();
-      Thread.sleep(2000);
+      //Employee Payslip
 
-      mg.clickbtnRamakantaSamalEmployee();
-      Thread.sleep(20000);
-
-      mg.clickbtnPayslipandForms();
-      Thread.sleep(2000);
-
-      mg.clickbtnViewFebPayslip();
-      Thread.sleep(10000);
+        Employee_Payslip();
+        Thread.sleep(2000);
       
       if(driver.getPageSource().contains("Rewards") && driver.getPageSource().contains("2000"))
       {
@@ -1312,21 +1223,10 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
         test.fail("Error: unable to Add Leave_Encashment");
       }
 
-      mg.clickbtnPayrollHistory();
+      //Run Payroll
+        
+      RunPayroll();
       Thread.sleep(2000);
-
-      //Need to change Per Month
-      mg.clickbtnPayrollFebruary();  //Change the xpath and Month for every month
-      Thread.sleep(2000);
-
-      mg.clickbtnRunPayroll();
-      Thread.sleep(2000);
-
-      mg.clickbtncheckbox();
-      Thread.sleep(2000);
-
-      mg.clickbtnRunPayrollFinal();
-      Thread.sleep(3000);
 
       if(driver.getPageSource().contains("Payroll has been processed successfully") && driver.getPageSource().contains("Ramakanta Samal"))
       {
@@ -1341,17 +1241,10 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
         test.fail("Unable to run the Payroll");
       }
 
-      mg.clickbtnEmployee();
-      Thread.sleep(2000);
+     //Employee Payslip
 
-      mg.clickbtnRamakantaSamalEmployee();
-      Thread.sleep(20000);
-
-      mg.clickbtnPayslipandForms();
-      Thread.sleep(2000);
-
-      mg.clickbtnViewFebPayslip();
-      Thread.sleep(10000);
+     Employee_Payslip();
+     Thread.sleep(2000);
       
       if(driver.getPageSource().contains("Leave_Encashment") && driver.getPageSource().contains("2000"))
       {

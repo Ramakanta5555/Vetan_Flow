@@ -1,6 +1,5 @@
 package com.vetan.mool.PageObjects;
 
-import org.checkerframework.checker.units.qual.A;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -81,11 +80,38 @@ public class MonthCloseArrearPage {
 
     @FindBy(xpath = "(//span[@class='ant-select-selection-item'])[2]")
     @CacheLookup
+    WebElement btnSelectAllowances;
+
+    public void clickbtnSelectAllowances()
+    {
+        btnSelectAllowances.click();
+    }
+
+    @FindBy(xpath = "(//div[contains(text(),'Food')])[1]")
+    @CacheLookup
+    WebElement btnFoodAllowances;
+
+    public void clickbtnFoodAllowances()
+    {
+        btnFoodAllowances.click();
+    }
+
+    @FindBy(xpath = "(//span[@class='ant-select-selection-item'])[2]")
+    @CacheLookup
     WebElement btnStartMonth;
 
     public void clickbtnStartMonth()
     {
         btnStartMonth.click();
+    }
+
+    @FindBy(xpath = "(//span[@class='ant-select-selection-item'])[3]")
+    @CacheLookup
+    WebElement btnAllowancesStartMonth;
+
+    public void clickbtnAllowancesStartMonth()
+    {
+        btnAllowancesStartMonth.click();
     }
 
     @FindBy(xpath = "(//div[contains(text(),'January')])[1]")
@@ -106,6 +132,15 @@ public class MonthCloseArrearPage {
         btnStartYear.click();
     }
 
+    @FindBy(xpath = "(//span[@class='ant-select-selection-item'])[4]")
+    @CacheLookup
+    WebElement btnAllowancesStartYear;
+
+    public void clickbtnAllowancesStartYear()
+    {
+        btnAllowancesStartYear.click();
+    }
+
     @FindBy(xpath = "(//input[@id='rc_select_3'])[1]")
     @CacheLookup
     WebElement txtStartYear;
@@ -113,6 +148,15 @@ public class MonthCloseArrearPage {
     public void settxtStartYear(String syear)
     {
         txtStartYear.sendKeys(syear);
+    }
+
+    @FindBy(xpath = "(//input[@id='rc_select_13'])[1]")
+    @CacheLookup
+    WebElement txtAllowancesStartYear;
+
+    public void settxtAllowancesStartYear(String syear)
+    {
+        txtAllowancesStartYear.sendKeys(syear);
     }
 
     @FindBy(xpath = "(//div[@class='ant-select-item-option-content'][normalize-space()='2023'])[1]")
@@ -133,6 +177,15 @@ public class MonthCloseArrearPage {
         btnEndMonth.click();
     }
 
+    @FindBy(xpath = "(//span[@class='ant-select-selection-item'])[5]")
+    @CacheLookup
+    WebElement btnAllowancesEndMonth;
+
+    public void clickbtnAllowancesEndMonth()
+    {
+        btnAllowancesEndMonth.click();
+    }
+
     @FindBy(xpath = "(//div[@class='ant-select-item-option-content'][normalize-space()='February'])[2]")
     @CacheLookup
     WebElement btnFebruary;
@@ -151,6 +204,15 @@ public class MonthCloseArrearPage {
         btnEndYear.click();
     }
 
+    @FindBy(xpath = "(//span[@class='ant-select-selection-item'])[6]")
+    @CacheLookup
+    WebElement btnAllowancesEndYear;
+
+    public void clickbtnAllowancesEndYear()
+    {
+        btnAllowancesEndYear.click();
+    }
+
     @FindBy(xpath = "(//input[@id='rc_select_5'])[1]")
     @CacheLookup
     WebElement txtEndYear;
@@ -158,6 +220,15 @@ public class MonthCloseArrearPage {
     public void settxtEndYear(String eyear)
     {
         txtEndYear.sendKeys(eyear);
+    }
+
+    @FindBy(xpath = "(//input[@id='rc_select_15'])[1]")
+    @CacheLookup
+    WebElement txtAllowancesEndYear;
+
+    public void settxtAllowancesEndYear(String eyear)
+    {
+        txtAllowancesEndYear.sendKeys(eyear);
     }
 
     @FindBy(xpath = "(//div[@class='ant-select-item-option-content'][normalize-space()='2023'])[2]")
@@ -178,6 +249,78 @@ public class MonthCloseArrearPage {
         btnMultiPhase.click();
     }
 
+    @FindBy(xpath = "(//span[@class='ant-select-selection-item'])[7]")
+    @CacheLookup
+    WebElement btnFromMonth;
+
+    public void clickbtnFromMonth()
+    {
+        btnFromMonth.click(); 
+    }
+
+    @FindBy(xpath = "(//div[contains(@class,'ant-select-item-option-content')][normalize-space()='February'])[3]")
+    @CacheLookup
+    WebElement btnFromNMonthFebruary;
+
+    public void clickbtnFromMonthFebruary()
+    {
+        btnFromNMonthFebruary.click();
+    }
+
+    @FindBy(xpath = "(//span[@class='ant-select-selection-item'])[8]")
+    @CacheLookup
+    WebElement btnFromYear;
+
+    public void clickbtnFromYear()
+    {
+        btnFromYear.click();
+    }
+
+    @FindBy(xpath = "(//div[contains(@class,'ant-select-item-option-content')][normalize-space()='2023'])[3]")
+    @CacheLookup
+    WebElement btnFromYear2023;
+
+    public void clickbtnFromYear2023()
+    {
+        btnFromYear2023.click();
+    }
+
+    @FindBy(xpath = "(//span[@class='ant-select-selection-item'])[9]")
+    @CacheLookup
+    WebElement btnToMonth;
+
+    public void clickbtnToMonth()
+    {
+        btnToMonth.click();
+    }
+
+    @FindBy(xpath = "(//div[contains(@class,'ant-select-item-option-content')][normalize-space()='March'])[4]")
+    @CacheLookup
+    WebElement btnToMonthMarch;
+
+    public void clickbtnToMonthMarch()
+    {
+        btnToMonthMarch.click();
+    }
+
+    @FindBy(xpath = "(//span[contains(@class,'ant-select-selection-item')])[10]")
+    @CacheLookup
+    WebElement btnToYear;
+
+    public void clickbtnToYear()
+    {
+        btnToYear.click();
+    }
+
+    @FindBy(xpath = "(//div[contains(@class,'ant-select-item-option-content')][normalize-space()='2023'])[4]")
+    @CacheLookup
+    WebElement btnToYear2023;
+
+    public void clickbtnToYear2023()
+    {
+        btnToYear2023.click();
+    }
+
     @FindBy(xpath = "(//input[@placeholder=' '])[1]")
     @CacheLookup
     WebElement txtTotalAmount;
@@ -194,6 +337,24 @@ public class MonthCloseArrearPage {
     public void clickbtnAddtoMonthEndData()
     {
         btnAddtoMonthEndData.click();
+    }
+
+    @FindBy(xpath = "(//img[@alt='pri-icon'])[3]")
+    @CacheLookup
+    WebElement btnDeleteArrear;
+
+    public void clickbtnDeleteArrear()
+    {
+        btnDeleteArrear.click();
+    }
+
+    @FindBy(xpath = "(//span[normalize-space()='OK'])[1]")
+    @CacheLookup
+    WebElement btnConfirmDelete;
+
+    public void clickbtnConfirmDelete()
+    {
+        btnConfirmDelete.click();
     }
 
     //PAYROLL
@@ -289,21 +450,4 @@ public class MonthCloseArrearPage {
 		btnClosePayslip.click();
 	}
 
-    @FindBy(xpath = "(//img[@alt='pri-icon'])[3]")
-    @CacheLookup
-    WebElement btnDeleteArrear;
-
-    public void clickbtnDeleteArrear()
-    {
-        btnDeleteArrear.click();
-    }
-
-    @FindBy(xpath = "(//span[normalize-space()='OK'])[1]")
-    @CacheLookup
-    WebElement btnConfirmDelete;
-
-    public void clickbtnConfirmDelete()
-    {
-        btnConfirmDelete.click();
-    }
 }

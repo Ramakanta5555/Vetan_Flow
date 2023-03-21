@@ -1,60 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-11T17:04:10 IST" name="Vetan_Flow" finished-at="2023-02-11T17:18:31 IST" duration-ms="860828">
+  <suite started-at="2023-03-22T01:27:21 IST" name="Vetan_Flow" finished-at="2023-03-22T01:29:01 IST" duration-ms="100149">
     <groups>
     </groups>
-    <test started-at="2023-02-11T17:04:10 IST" name="Mool MonthCloseGeneral Chrome" finished-at="2023-02-11T17:16:22 IST" duration-ms="732013">
-      <class name="com.vetan.mool.TestCases.TC_MonthCloseGeneral_001">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.vetan.mool.TestCases.TC_MonthCloseGeneral_001@65466a6a]" started-at="2023-02-11T17:04:10 IST" name="setup" finished-at="2023-02-11T17:04:27 IST" duration-ms="16233" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Awards()[pri:0, instance:com.vetan.mool.TestCases.TC_MonthCloseGeneral_001@65466a6a]" started-at="2023-02-11T17:04:27 IST" name="Awards" finished-at="2023-02-11T17:07:57 IST" duration-ms="210228" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Awards -->
-        <test-method signature="Incentive()[pri:0, instance:com.vetan.mool.TestCases.TC_MonthCloseGeneral_001@65466a6a]" started-at="2023-02-11T17:07:57 IST" name="Incentive" finished-at="2023-02-11T17:09:34 IST" duration-ms="97000" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Incentive -->
-        <test-method signature="LeaveEncashment()[pri:0, instance:com.vetan.mool.TestCases.TC_MonthCloseGeneral_001@65466a6a]" started-at="2023-02-11T17:09:34 IST" name="LeaveEncashment" finished-at="2023-02-11T17:11:17 IST" duration-ms="103410" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LeaveEncashment -->
-        <test-method signature="Rewards()[pri:0, instance:com.vetan.mool.TestCases.TC_MonthCloseGeneral_001@65466a6a]" started-at="2023-02-11T17:11:17 IST" name="Rewards" finished-at="2023-02-11T17:13:00 IST" duration-ms="102993" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Rewards -->
-        <test-method signature="otherAllowances()[pri:0, instance:com.vetan.mool.TestCases.TC_MonthCloseGeneral_001@65466a6a]" started-at="2023-02-11T17:13:00 IST" name="otherAllowances" finished-at="2023-02-11T17:14:41 IST" duration-ms="100535" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- otherAllowances -->
-        <test-method signature="variableSalary()[pri:0, instance:com.vetan.mool.TestCases.TC_MonthCloseGeneral_001@65466a6a]" started-at="2023-02-11T17:14:41 IST" name="variableSalary" finished-at="2023-02-11T17:16:22 IST" duration-ms="101368" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variableSalary -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.vetan.mool.TestCases.TC_MonthCloseGeneral_001@65466a6a]" started-at="2023-02-11T17:16:22 IST" name="tearDown" finished-at="2023-02-11T17:16:22 IST" duration-ms="207" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.vetan.mool.TestCases.TC_MonthCloseGeneral_001 -->
-    </test> <!-- Mool MonthCloseGeneral Chrome -->
-    <test started-at="2023-02-11T17:16:23 IST" name="Mool MonthCloseArrear Chrome" finished-at="2023-02-11T17:18:31 IST" duration-ms="128573">
-      <class name="com.vetan.mool.TestCases.TC_MonthCloseArrear_001">
-        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.vetan.mool.TestCases.TC_MonthCloseArrear_001@70e8f8e]" started-at="2023-02-11T17:04:10 IST" name="BeforeSuite" finished-at="2023-02-11T17:04:10 IST" duration-ms="131" status="PASS">
+    <test started-at="2023-03-22T01:27:21 IST" name="Mool MonthCloseBonus Chrome" finished-at="2023-03-22T01:29:01 IST" duration-ms="100149">
+      <class name="com.vetan.mool.TestCases.TC_MonthCloseBonus_001">
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.vetan.mool.TestCases.TC_MonthCloseBonus_001@5c909414]" started-at="2023-03-22T01:27:21 IST" name="BeforeSuite" finished-at="2023-03-22T01:27:21 IST" duration-ms="139" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeSuite -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.vetan.mool.TestCases.TC_MonthCloseArrear_001@70e8f8e]" started-at="2023-02-11T17:16:23 IST" name="setup" finished-at="2023-02-11T17:16:37 IST" duration-ms="14196" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.vetan.mool.TestCases.TC_MonthCloseBonus_001@5c909414]" started-at="2023-03-22T01:27:21 IST" name="setup" finished-at="2023-03-22T01:27:24 IST" duration-ms="2697" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -65,19 +22,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="MonthCloseArrear()[pri:0, instance:com.vetan.mool.TestCases.TC_MonthCloseArrear_001@70e8f8e]" started-at="2023-02-11T17:16:37 IST" name="MonthCloseArrear" finished-at="2023-02-11T17:18:31 IST" duration-ms="114090" status="PASS">
+        <test-method signature="MonthClosePujaBonus()[pri:0, instance:com.vetan.mool.TestCases.TC_MonthCloseBonus_001@5c909414]" started-at="2023-03-22T01:27:24 IST" name="MonthClosePujaBonus" finished-at="2023-03-22T01:29:01 IST" duration-ms="97271" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MonthCloseArrear -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.vetan.mool.TestCases.TC_MonthCloseArrear_001@70e8f8e]" started-at="2023-02-11T17:18:31 IST" name="tearDown" finished-at="2023-02-11T17:18:31 IST" duration-ms="284" status="PASS">
+        </test-method> <!-- MonthClosePujaBonus -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.vetan.mool.TestCases.TC_MonthCloseBonus_001@5c909414]" started-at="2023-03-22T01:29:01 IST" name="tearDown" finished-at="2023-03-22T01:29:01 IST" duration-ms="169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.vetan.mool.TestCases.TC_MonthCloseArrear_001@70e8f8e]" started-at="2023-02-11T17:18:31 IST" name="afterSuite" finished-at="2023-02-11T17:18:32 IST" duration-ms="239" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.vetan.mool.TestCases.TC_MonthCloseBonus_001@5c909414]" started-at="2023-03-22T01:29:01 IST" name="afterSuite" finished-at="2023-03-22T01:29:02 IST" duration-ms="164" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.vetan.mool.TestCases.TC_MonthCloseArrear_001 -->
-    </test> <!-- Mool MonthCloseArrear Chrome -->
+      </class> <!-- com.vetan.mool.TestCases.TC_MonthCloseBonus_001 -->
+    </test> <!-- Mool MonthCloseBonus Chrome -->
   </suite> <!-- Vetan_Flow -->
 </testng-results>

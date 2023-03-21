@@ -154,13 +154,13 @@ public class MonthCloseGeneralPage {
 		btnPayrolllHistory.click();
 	}
 
-	@FindBy(xpath = "(//h3[normalize-space()='Payroll for February'])[1]")
+	@FindBy(xpath = "(//h3[normalize-space()='Payroll for March'])[1]")
 	@CacheLookup
-	WebElement btnPayrollFebruary;
+	WebElement btnPayrollMarch;
 
-	public void clickbtnPayrollFebruary()
+	public void clickbtnPayrollMarch()
 	{
-		btnPayrollFebruary.click();
+		btnPayrollMarch.click();
 	}
 
 	@FindBy(xpath = "(//div[contains(text(),'Run payroll')])[1]")

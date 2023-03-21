@@ -14,6 +14,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
@@ -26,6 +27,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.vetan.mool.PageObjects.LoginPage;
 import com.vetan.mool.Utilities.readConfig;
+import com.vetan.mool.PageObjects.RunPayrollPage_EmployeePayslipPage;
 
 public class BaseClass {
 	
@@ -78,7 +80,9 @@ public class BaseClass {
 	{
 		if(br.equals("chrome")) {
 		System.setProperty("webdriver.chrome.driver", readconfig.getchromepath());
-		driver = new ChromeDriver(); 
+		ChromeOptions co = new ChromeOptions();
+		co.addArguments("--remote-allow-origins=*");
+		driver = new ChromeDriver(co); 
 		}else if(br.equals("safari"))
 		{
 			driver = new SafariDriver();
@@ -215,8 +219,8 @@ public class BaseClass {
 	System.out.println(driver.getTitle());
 
 }
-		
-	
+//TearDown
+
 	@AfterClass
 	public void tearDown()
 	{
@@ -229,10 +233,6 @@ public class BaseClass {
 		
 		extent.flush();
 	}
-	
-	
-}
-
 
 // // Gmail Signin
 // 	 //Page Object
@@ -253,4 +253,49 @@ public class BaseClass {
 // 	 {
 // 		 txtEmailorPhone.sendKeys(Ep);
 // 	 }
+
+//Run Payroll
+
+
+public void RunPayroll() throws InterruptedException
+{
+
+		RunPayrollPage_EmployeePayslipPage RE = new RunPayrollPage_EmployeePayslipPage(BaseClass.driver);
+		Thread.sleep(2000);
+		
+		RE.clickbtnPayrollHistory();
+        Thread.sleep(2000);
+
+        RE.clickbtnPayrollMarch();
+        Thread.sleep(2000);
+
+        RE.clickbtnRunPayroll();
+        Thread.sleep(2000);
+
+        RE.clickbtncheckbox();
+        Thread.sleep(2000);
+
+        RE.clickbtnRunPayrollFinal();
+        Thread.sleep(3000);
+}
+
+public void Employee_Payslip() throws InterruptedException
+{
+
+		RunPayrollPage_EmployeePayslipPage RE = new RunPayrollPage_EmployeePayslipPage(BaseClass.driver);
+		Thread.sleep(2000);
+		
+		RE.clickbtnEmployee();
+        Thread.sleep(2000);
+
+        RE.clickbtnRamakantaSamalEmployee();
+        Thread.sleep(2000);
+
+        RE.clickbtnPayslipandForms();
+        Thread.sleep(2000);
+
+        RE.clickbtnViewMarchPayslip();
+        Thread.sleep(2000);
+}
  
+}
