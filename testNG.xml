@@ -18,56 +18,56 @@
 	<test name="Mool MonthCloseGeneral Chrome"> 
 		<parameter name="browser" value="chrome"/>
 			<classes>
-				<class name="com.vetan.mool.TestCases.TC_MonthCloseGeneral_001"></class>
+				<class name="com.vetan.mool.TestCases.MonthClose.TC_MonthCloseGeneral_001"></class>
 			</classes>
 	</test> 
 
 	<test name="Mool MonthCloseArrear Chrome"> 
 		<parameter name="browser" value="chrome"/>
 			<classes>
-				<class name="com.vetan.mool.TestCases.TC_MonthCloseArrear_001"></class>
+				<class name="com.vetan.mool.TestCases.MonthClose.TC_MonthCloseArrear_001"></class>
 			</classes>
 	</test>
 
 	<test name="Mool MonthCloseBonus Chrome"> 
 		<parameter name="browser" value="chrome"/>
 			<classes>
-				<class name="com.vetan.mool.TestCases.TC_MonthCloseBonus_001"></class>
+				<class name="com.vetan.mool.TestCases.MonthClose.TC_MonthCloseBonus_001"></class>
 			</classes>
 	</test>
 
 	<test name="Mool MonthCloseAccident Chrome"> 
 		<parameter name="browser" value="chrome"/>
 			<classes>
-				<class name="com.vetan.mool.TestCases.TC_MonthCloseAccident_001"></class>
+				<class name="com.vetan.mool.TestCases.MonthClose.TC_MonthCloseAccident_001"></class>
 			</classes>
 	</test>
 
 	<test name="Mool MonthCloseFine Chrome"> 
 		<parameter name="browser" value="chrome"/>
 			<classes>
-				<class name="com.vetan.mool.TestCases.TC_MonthCloseFine_001"></class>
+				<class name="com.vetan.mool.TestCases.MonthClose.TC_MonthCloseFine_001"></class>
 			</classes>
 	</test>
 
 	<test name="Mool MonthCloseOvertime Chrome"> 
 		<parameter name="browser" value="chrome"/>
 			<classes>
-				<class name="com.vetan.mool.TestCases.TC_MonthCloseOvertime_001"></class>
+				<class name="com.vetan.mool.TestCases.MonthClose.TC_MonthCloseOvertime_001"></class>
 			</classes>
 	</test>
 
 	<test name="Mool MonthCloseLOPOverday Chrome"> 
 		<parameter name="browser" value="chrome"/>
 			<classes>
-				<class name="com.vetan.mool.TestCases.TC_MonthCloseLOPOverDay_001"></class>
+				<class name="com.vetan.mool.TestCases.MonthClose.TC_MonthCloseLOPOverDay_001"></class>
 			</classes>
 	</test>
 
 	<!-- <test name="Mool MonthCloseCustom Chrome"> 
 		<parameter name="browser" value="chrome"/>
 			<classes>
-				<class name="com.vetan.mool.TestCases.TC_LoansandAdvanceSalary_001"></class>
+				<class name="com.vetan.mool.TestCases.MonthClose.TC_LoansandAdvanceSalary_001"></class>
 			</classes>
 	</test> -->
 

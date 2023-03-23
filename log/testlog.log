@@ -1901,3 +1901,38 @@
 2023-03-23 17:18:39,100 - Vetan_Flow -INFO - Variable Salary added to the Payslip
 2023-03-23 17:18:39,108 - Vetan_Flow -INFO - Variable Salary Calculated correctly on Payslip
 2023-03-23 17:19:00,504 - Vetan_Flow -INFO - Successful: Variable Salary Deleted successfully
+2023-03-23 17:33:20,181 - Vetan_Flow -INFO - Success: Awards Added Successfully
+2023-03-23 17:33:35,561 - Vetan_Flow -INFO - Payroll run Successfully
+2023-03-23 17:33:48,933 - Vetan_Flow -INFO - Awards added to the Payslip
+2023-03-23 17:33:48,943 - Vetan_Flow -INFO - Awards Calculated correctly on Payslip
+2023-03-23 17:34:15,353 - Vetan_Flow -INFO - Successful: Awards Deleted successfully
+2023-03-23 17:34:40,130 - Vetan_Flow -INFO - Success: Attendance_Bonus Added Successfully
+2023-03-23 17:34:51,501 - Vetan_Flow -INFO - Payroll run Successfully
+2023-03-23 17:35:25,770 - Vetan_Flow -INFO - Attendance_Bonus added to the Payslip
+2023-03-23 17:35:25,781 - Vetan_Flow -INFO - Attendance_Bonus Calculated correctly on Payslip
+2023-03-23 17:35:46,168 - Vetan_Flow -INFO - Successful: Attendance_Bonus Deleted successfully
+2023-03-23 17:36:17,071 - Vetan_Flow -INFO - Success: Incentive Added Successfully
+2023-03-23 17:36:32,477 - Vetan_Flow -INFO - Payroll run Successfully
+2023-03-23 17:36:45,828 - Vetan_Flow -INFO - Incentive added to the Payslip
+2023-03-23 17:36:45,838 - Vetan_Flow -INFO - Incentive Calculated correctly on Payslip
+2023-03-23 17:37:02,234 - Vetan_Flow -INFO - Successful: Incentive Deleted successfully
+2023-03-23 17:37:36,170 - Vetan_Flow -INFO - Success: Leave_Encashment Added Successfully
+2023-03-23 17:37:51,565 - Vetan_Flow -INFO - Payroll run Successfully
+2023-03-23 17:38:04,907 - Vetan_Flow -INFO - Leave_Encashment added to the Payslip
+2023-03-23 17:38:04,916 - Vetan_Flow -INFO - Leave_Encashment Calculated correctly on Payslip
+2023-03-23 17:38:26,327 - Vetan_Flow -INFO - Successful: Leave_Encashment Deleted successfully
+2023-03-23 17:39:00,310 - Vetan_Flow -INFO - Success: Rewards Added Successfully
+2023-03-23 17:39:15,711 - Vetan_Flow -INFO - Payroll run Successfully
+2023-03-23 17:39:29,083 - Vetan_Flow -INFO - Rewards added to the Payslip
+2023-03-23 17:39:29,092 - Vetan_Flow -INFO - Rewards Calculated correctly on Payslip
+2023-03-23 17:39:50,508 - Vetan_Flow -INFO - Successful: Rewards Deleted successfully
+2023-03-23 17:40:21,503 - Vetan_Flow -INFO - Success: Other_Allowances Added Successfully
+2023-03-23 17:40:36,920 - Vetan_Flow -INFO - Payroll run Successfully
+2023-03-23 17:40:50,263 - Vetan_Flow -INFO - Other_Allowances added to the Payslip
+2023-03-23 17:40:50,277 - Vetan_Flow -INFO - Other_Allowances Calculated correctly on Payslip
+2023-03-23 17:41:11,710 - Vetan_Flow -INFO - Successful: Other_Allowances Deleted successfully
+2023-03-23 17:41:43,709 - Vetan_Flow -INFO - Success: Variable Salary Added Successfully
+2023-03-23 17:41:59,085 - Vetan_Flow -INFO - Payroll run Successfully
+2023-03-23 17:42:12,443 - Vetan_Flow -INFO - Variable Salary added to the Payslip
+2023-03-23 17:42:12,453 - Vetan_Flow -INFO - Variable Salary Calculated correctly on Payslip
+2023-03-23 17:42:33,870 - Vetan_Flow -INFO - Successful: Variable Salary Deleted successfully

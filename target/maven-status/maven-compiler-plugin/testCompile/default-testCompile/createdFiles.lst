@@ -14,11 +14,11 @@ com/vetan/mool/PageObjects/RunPayrollPage_EmployeePayslipPage.class
 com/vetan/mool/TestCases/TC_MonthCloseAccident_001.class
 com/vetan/mool/TestCases/TC_SignupFlow_001.class
 com/vetan/mool/PageObjects/LoginPage.class
+com/vetan/mool/TestCases/MonthClose/TC_MonthCloseGeneral_001.class
 com/vetan/mool/PageObjects/LoansandAdvanceSalaryPage.class
 com/vetan/mool/Utilities/readConfig.class
 com/vetan/mool/PageObjects/MonthCloseArrearPage.class
 com/vetan/mool/TestCases/TC_MonthCloseFine_001.class
-com/vetan/mool/TestCases/TC_MonthCloseGeneral_001.class
 com/vetan/mool/TestCases/TC_MonthCloseCustom_001.class
 com/vetan/mool/PageObjects/MonthCloseOvertimePage.class
 com/vetan/mool/Utilities/xlutils.class
