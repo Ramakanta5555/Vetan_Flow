@@ -1,7 +1,8 @@
-package com.vetan.mool.TestCases;
+package com.vetan.mool.TestCases.MonthClose;
 import org.testng.annotations.Test;
 
 import com.vetan.mool.PageObjects.LoansandAdvanceSalaryPage;
+import com.vetan.mool.TestCases.BaseClass;
 
 public class TC_LoansandAdvanceSalary_001 extends BaseClass{
     

@@ -1,4 +1,4 @@
-package com.vetan.mool.TestCases;
+package com.vetan.mool.TestCases.MonthClose;
 
 
 import org.openqa.selenium.By;
@@ -8,6 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.vetan.mool.PageObjects.MonthCloseFinePage;
+import com.vetan.mool.TestCases.BaseClass;
 
 public class TC_MonthCloseFine_001 extends BaseClass{
     

@@ -1,4 +1,4 @@
-package com.vetan.mool.TestCases;
+package com.vetan.mool.TestCases.MonthClose;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -7,6 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.vetan.mool.PageObjects.MonthCloseLOPOverdayPage;
+import com.vetan.mool.TestCases.BaseClass;
 
 public class TC_MonthCloseLOPOverDay_001 extends BaseClass{
     

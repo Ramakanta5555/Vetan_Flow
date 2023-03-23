@@ -1,4 +1,4 @@
-package com.vetan.mool.TestCases;
+package com.vetan.mool.TestCases.MonthClose;
 
 
 import org.openqa.selenium.By;
@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.vetan.mool.PageObjects.MonthCloseArrearPage;
+import com.vetan.mool.TestCases.BaseClass;
 
 
 public class TC_MonthCloseArrear_001 extends BaseClass{
