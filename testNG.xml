@@ -15,7 +15,7 @@
 		<listener class-name="com.vetan.mool.TestCases.BaseClass"></listener>
 	</listeners>  -->
 
-	<!-- <test name="Mool MonthCloseGeneral Chrome"> 
+	<test name="Mool MonthCloseGeneral Chrome"> 
 		<parameter name="browser" value="chrome"/>
 			<classes>
 				<class name="com.vetan.mool.TestCases.TC_MonthCloseGeneral_001"></class>
@@ -27,7 +27,7 @@
 			<classes>
 				<class name="com.vetan.mool.TestCases.TC_MonthCloseArrear_001"></class>
 			</classes>
-	</test> -->
+	</test>
 
 	<test name="Mool MonthCloseBonus Chrome"> 
 		<parameter name="browser" value="chrome"/>

@@ -7,7 +7,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.vetan.mool.PageObjects.MonthCloseBonusPage;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class TC_MonthCloseBonus_001 extends BaseClass{
+    
     
     @Test
     public void MonthClosePujaBonus() throws InterruptedException
@@ -64,11 +68,12 @@ public class TC_MonthCloseBonus_001 extends BaseClass{
         Thread.sleep(2000);
 
         mb.clickbtnAddToMonthEndData();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
 
         if (driver.getPageSource().contains("Successfully added the bonus")) 
         {
-            logger.info("Puja_Bonus Added successfully");
+            // logger.info("Puja_Bonus Added successfully");
+            log.info("Puja_Bonus Added successfully");
             test.pass("Puja_Bonus Added successfully");
         } else 
         {

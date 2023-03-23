@@ -88,7 +88,7 @@ public class MonthCloseGeneralPage {
 	}
 
 	//Need to change Per Month
-	@FindBy(xpath = "(//span[@title='February'])[1]")
+	@FindBy(xpath = "(//span[@title='March'])[1]")
 	@CacheLookup
 	WebElement btnMonth;
 
@@ -97,7 +97,7 @@ public class MonthCloseGeneralPage {
 		btnMonth.click();
 	}
 
-	@FindBy(xpath = "(//div[contains(text(),'February')])[1]")
+	@FindBy(xpath = "(//div[contains(text(),'March')])[1]")
 	@CacheLookup
 	WebElement btnFebruary;
 
@@ -216,7 +216,7 @@ public class MonthCloseGeneralPage {
 		btnPayslipandForms.click();
 	}
 	
-	@FindBy(xpath = "(//div[contains(text(),'View')])[1]")
+	@FindBy(xpath = "(//div[contains(text(),'View')])[3]")
 	@CacheLookup
 	WebElement btnViewFebPayslip;
 

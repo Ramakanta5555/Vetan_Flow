@@ -112,7 +112,7 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
       Employee_Payslip();
       Thread.sleep(2000);
       
-      if(driver.getPageSource().contains("Award") && driver.getPageSource().contains("2000"))
+      if(driver.getPageSource().contains("Award") && driver.getPageSource().contains("2,000.00"))
       {
         logger.info("Awards added to the Payslip");
         Assert.assertTrue(true);
@@ -125,13 +125,13 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
         test.fail("Error: Awards not avilable on the Payslip");
       }
 
-      if(driver.getPageSource().contains("121,200"))
+      if(driver.getPageSource().contains("118,595.00"))
       {
         logger.info("Awards Calculated correctly on Payslip"); 
         Assert.assertTrue(true);
         test.pass("Awards Calculated correctly on Payslip");
-        test.info("NetPay before Awards addition: 119200");
-        test.info("NetPay after Awards addition: 121200");
+        test.info("NetPay before Awards addition: 110,395");
+        test.info("NetPay after Awards addition: 112,395");
       }
       else
       { 
@@ -314,7 +314,7 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
         btnPayrollHistory.click();
         Thread.sleep(2000);
 
-        WebElement btnPayrollFebruary = driver.findElement(By.xpath("(//h3[normalize-space()='Payroll for February'])[1]"));
+        WebElement btnPayrollFebruary = driver.findElement(By.xpath("(//h3[normalize-space()='Payroll for March'])[1]"));
          //Change the xpath and Month for every month
         btnPayrollFebruary.click();
         Thread.sleep(2000);
@@ -373,12 +373,12 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
         btnPayslipandForms.click();
         Thread.sleep(2000);
 
-        WebElement btnViewFebPayslip = driver.findElement(By.xpath("(//div[contains(text(),'View')])[1]"));
+        WebElement btnViewFebPayslip = driver.findElement(By.xpath("(//div[contains(text(),'View')])[3]"));
         btnViewFebPayslip.click();
         Thread.sleep(2000);
       }
       
-      if(driver.getPageSource().contains("Attendance_Bonus") && driver.getPageSource().contains("2000"))
+      if(driver.getPageSource().contains("Attendance_Bonus") && driver.getPageSource().contains("2,000.00"))
       {
         logger.info("Attendance_Bonus added to the Payslip");
         Assert.assertTrue(true);
@@ -391,21 +391,21 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
         test.fail("Error: Attendance_Bonus not avilable on the Payslip");
       }
 
-      if(driver.getPageSource().contains("121,200"))
+      if(driver.getPageSource().contains("118,595.00"))
       {
         logger.info("Attendance_Bonus Calculated correctly on Payslip"); 
         Assert.assertTrue(true);
         test.pass("Attendance_Bonus Calculated correctly on Payslip");
-        test.info("NetPay before Attendance_Bonus addition: 119200");
-        test.info("NetPay after Attendance_Bonus addition: 121200");
-        System.out.println(Math.subtractExact(121200, 119200));
+        test.info("NetPay before Attendance_Bonus addition: 110,395");
+        test.info("NetPay after Attendance_Bonus addition: 112,395");
+        // System.out.println(Math.subtractExact(121200, 119200));
       }
       else
       { 
         logger.info("Error: There is some error on Attendance_Bonus Calculation");
         // Assert.assertTrue(false);
         test.fail("Error: There is some error on Attendance_Bonus Calculation");
-        test.info("NetPay: 119200");
+        test.info("NetPay: 110,395");
       }
 
       try {
@@ -570,7 +570,7 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
       Employee_Payslip();
       Thread.sleep(2000);
       
-      if(driver.getPageSource().contains("Incentive") && driver.getPageSource().contains("2000"))
+      if(driver.getPageSource().contains("Incentive") && driver.getPageSource().contains("2,000.00"))
       {
         logger.info("Incentive added to the Payslip");
         Assert.assertTrue(true);
@@ -583,20 +583,20 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
         test.fail("Error: Incentive not avilable on the Payslip");
       }
 
-      if(driver.getPageSource().contains("121,200"))
+      if(driver.getPageSource().contains("118,595.00"))
       {
         logger.info("Incentive Calculated correctly on Payslip"); 
         Assert.assertTrue(true);
         test.pass("Incentive Calculated correctly on Payslip");
-        test.info("NetPay before Incentive addition: 119200");
-        test.info("NetPay after Incentive addition: 121200");
+        test.info("NetPay before Incentive addition: 110,395");
+        test.info("NetPay after Incentive addition: 112,395");
       }
       else
       { 
         logger.info("Error: There is some error on Incentive Calculation");
         // Assert.assertTrue(false);
         test.fail("Error: There is some error on Incentive Calculation");
-        test.info("Netpay: 119200");
+        test.info("Netpay: 110,395");
       }
 
       mg.clickbtnCloseOPayslip();
@@ -739,7 +739,7 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
       Employee_Payslip();
       Thread.sleep(2000);
       
-      if(driver.getPageSource().contains("Variable_Salary") && driver.getPageSource().contains("2000"))
+      if(driver.getPageSource().contains("Variable_Salary") && driver.getPageSource().contains("2,000.00"))
       {
         logger.info("Variable Salary added to the Payslip");
         Assert.assertTrue(true);
@@ -752,21 +752,20 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
         test.fail("Error: Variable Salary not avilable on the Payslip");
       }
 
-      if(driver.getPageSource().contains("121,200"))
+      if(driver.getPageSource().contains("118,595.00"))
       {
         logger.info("Variable Salary Calculated correctly on Payslip"); 
         Assert.assertTrue(true);
         test.pass("Variable Salary Calculated correctly on Payslip");
-        test.info("NetPay before Variable Salary addition: 119200");
-        test.info("NetPay after Variable Salary addition: 121200");
-        Math.subtractExact(121200, 119200);
+        test.info("NetPay before Variable Salary addition: 110,395");
+        test.info("NetPay after Variable Salary addition: 112,395");
       }
       else
       { 
         logger.info("Error: There is some error on Variable Salary Calculation");
         // Assert.assertTrue(false);
         test.fail("Error: There is some error on Variable Salary Calculation");
-        test.info("NetPay: 119200");
+        test.info("NetPay: 110,395");
       }
 
       mg.clickbtnCloseOPayslip();
@@ -908,7 +907,7 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
       Employee_Payslip();
       Thread.sleep(2000);
       
-      if(driver.getPageSource().contains("Other_Allowance") && driver.getPageSource().contains("2000"))
+      if(driver.getPageSource().contains("Other_Allowance") && driver.getPageSource().contains("2,000.00"))
       {
         logger.info("Other_Allowances added to the Payslip");
         Assert.assertTrue(true);
@@ -921,21 +920,21 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
         test.fail("Error: Other_Allowances not avilable on the Payslip");
       }
 
-      if(driver.getPageSource().contains("121,200"))
+      if(driver.getPageSource().contains("118,595.00"))
       {
         logger.info("Other_Allowances Calculated correctly on Payslip"); 
         Assert.assertTrue(true);
         test.pass("Other_Allowances Calculated correctly on Payslip");
-        test.info("NetPay before Other_Allowances addition: 119200");
-        test.info("NetPay after Other_Allowances addition: 121200");
-        System.out.println(Math.subtractExact(121200, 119200));
+        test.info("NetPay before Other_Allowances addition: 110,395");
+        test.info("NetPay after Other_Allowances addition: 112,395");
+        
       }
       else
       { 
         logger.info("Error: There is some error on Other_Allowances Calculation");
         // Assert.assertTrue(false);
         test.fail("Error: There is some error on Other_Allowances Calculation");
-        test.info("NetPay: 119200");
+        test.info("NetPay: 110,395");
       }
 
       mg.clickbtnCloseOPayslip();
@@ -1077,7 +1076,7 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
         Employee_Payslip();
         Thread.sleep(2000);
       
-      if(driver.getPageSource().contains("Rewards") && driver.getPageSource().contains("2000"))
+      if(driver.getPageSource().contains("Rewards") && driver.getPageSource().contains("2,000.00"))
       {
         logger.info("Rewards added to the Payslip");
         Assert.assertTrue(true);
@@ -1090,21 +1089,21 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
         test.fail("Error: Rewards not avilable on the Payslip");
       }
 
-      if(driver.getPageSource().contains("121,200"))
+      if(driver.getPageSource().contains("118,595.00"))
       {
         logger.info("Rewards Calculated correctly on Payslip"); 
         Assert.assertTrue(true);
         test.pass("Rewards Calculated correctly on Payslip");
-        test.info("NetPay before Rewards addition: 119200");
-        test.info("NetPay after Rewards addition: 121200");
-        System.out.println(Math.subtractExact(121200, 119200));
+        test.info("NetPay before Rewards addition: 110,395");
+        test.info("NetPay after Rewards addition: 112,395");
+        
       }
       else
       { 
         logger.info("Error: There is some error on Rewards Calculation");
         // Assert.assertTrue(false);
         test.fail("Error: There is some error on Rewards Calculation");
-        test.info("NetPay: 119200");
+        test.info("NetPay: 110,395");
       }
 
       mg.clickbtnCloseOPayslip();
@@ -1246,7 +1245,7 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
      Employee_Payslip();
      Thread.sleep(2000);
       
-      if(driver.getPageSource().contains("Leave_Encashment") && driver.getPageSource().contains("2000"))
+      if(driver.getPageSource().contains("Leave_Encashment") && driver.getPageSource().contains("2,000.00"))
       {
         logger.info("Leave_Encashment added to the Payslip");
         Assert.assertTrue(true);
@@ -1259,21 +1258,21 @@ public class TC_MonthCloseGeneral_001 extends BaseClass {
         test.fail("Error: Leave_Encashment not avilable on the Payslip");
       }
 
-      if(driver.getPageSource().contains("121,200"))
+      if(driver.getPageSource().contains("118,595.00"))
       {
         logger.info("Leave_Encashment Calculated correctly on Payslip"); 
         Assert.assertTrue(true);
         test.pass("Leave_Encashment Calculated correctly on Payslip");
-        test.info("NetPay before Leave_Encashment addition: 119200");
-        test.info("NetPay after Leave_Encashment addition: 121200");
-        System.out.println(Math.subtractExact(121200, 119200));
+        test.info("NetPay before Leave_Encashment addition: 110,395");
+        test.info("NetPay after Leave_Encashment addition: 112,395");
+
       }
       else
       { 
         logger.info("Error: There is some error on Leave_Encashment Calculation");
         // Assert.assertTrue(false);
         test.fail("Error: There is some error on Leave_Encashment Calculation");
-        test.info("NetPay: 119200");
+        test.info("NetPay: 110,395");
       }
 
       mg.clickbtnCloseOPayslip();

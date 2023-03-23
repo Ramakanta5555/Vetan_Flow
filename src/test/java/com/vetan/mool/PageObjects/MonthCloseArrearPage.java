@@ -186,7 +186,7 @@ public class MonthCloseArrearPage {
         btnAllowancesEndMonth.click();
     }
 
-    @FindBy(xpath = "(//div[@class='ant-select-item-option-content'][normalize-space()='February'])[2]")
+    @FindBy(xpath = "(//div[@class='ant-select-item-option-content'][normalize-space()='March'])[2]")
     @CacheLookup
     WebElement btnFebruary;
 
@@ -249,7 +249,7 @@ public class MonthCloseArrearPage {
         btnMultiPhase.click();
     }
 
-    @FindBy(xpath = "(//span[@class='ant-select-selection-item'])[7]")
+    @FindBy(xpath = "(//span[contains(@class,'ant-select-selection-item')])[6]")
     @CacheLookup
     WebElement btnFromMonth;
 
@@ -258,7 +258,7 @@ public class MonthCloseArrearPage {
         btnFromMonth.click(); 
     }
 
-    @FindBy(xpath = "(//div[contains(@class,'ant-select-item-option-content')][normalize-space()='February'])[3]")
+    @FindBy(xpath = "(//div[contains(@class,'ant-select-item-option-content')][normalize-space()='January'])[3]")
     @CacheLookup
     WebElement btnFromNMonthFebruary;
 
@@ -267,7 +267,7 @@ public class MonthCloseArrearPage {
         btnFromNMonthFebruary.click();
     }
 
-    @FindBy(xpath = "(//span[@class='ant-select-selection-item'])[8]")
+    @FindBy(xpath = "(//span[contains(@class,'ant-select-selection-item')])[7]")
     @CacheLookup
     WebElement btnFromYear;
 
@@ -285,7 +285,7 @@ public class MonthCloseArrearPage {
         btnFromYear2023.click();
     }
 
-    @FindBy(xpath = "(//span[@class='ant-select-selection-item'])[9]")
+    @FindBy(xpath = "(//span[contains(@class,'ant-select-selection-item')])[8]")
     @CacheLookup
     WebElement btnToMonth;
 
@@ -303,7 +303,7 @@ public class MonthCloseArrearPage {
         btnToMonthMarch.click();
     }
 
-    @FindBy(xpath = "(//span[contains(@class,'ant-select-selection-item')])[10]")
+    @FindBy(xpath = "(//span[contains(@class,'ant-select-selection-item')])[9]")
     @CacheLookup
     WebElement btnToYear;
 

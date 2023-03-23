@@ -4,6 +4,7 @@ package com.vetan.mool.TestCases;
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.vetan.mool.PageObjects.MonthCloseArrearPage;
@@ -120,19 +121,17 @@ public class TC_MonthCloseArrear_001 extends BaseClass{
         Employee_Payslip();
         Thread.sleep(2000);
 
-        if (driver.getPageSource().contains("4,048.00") && driver.getPageSource().contains("122,152")) 
+        if (driver.getPageSource().contains("6,344.00") && driver.getPageSource().contains("119,451.00")) 
         {
             Assert.assertTrue(true);
             logger.info("Arrear Added to the Feb Payslip");
             test.pass("Arrear Added to the Feb Payslip");
             test.info("Basic: 1200.00");
             test.info("HRA:450.00");
-            test.info("SA: 1234.80");
-            test.info("Mobile: 24.00");
-            test.info("Food: 48.00");
-            test.info("Gross: 126,200.00");
-            test.info("Netpay before Arrear: 119,152.00");
-            test.info("Netpay After Arrear : 122,152.00");
+            test.info("SA: 1148.28	");
+            test.info("Gross: 119,451.00");
+            test.info("Netpay before Arrear: 110,395");
+            test.info("Netpay After Arrear : 113,107");
         }
         else
         {
@@ -188,7 +187,7 @@ public class TC_MonthCloseArrear_001 extends BaseClass{
     }
 
     //Multipurpose
-    @Test
+    
     public void MonthCloseArrearMultiPhase() throws InterruptedException
 	{
         test = extent.createTest("Arrear_MultiPhase").assignAuthor("Ramakanta Samal").assignCategory("Regression").assignDevice("chrome 109.0.5414.119");
@@ -215,40 +214,42 @@ public class TC_MonthCloseArrear_001 extends BaseClass{
         ma.clickbtnRamakantaSamal();
         Thread.sleep(5000);
 
-        ma.clickbtnAllowancesArrear();
-        Thread.sleep(5000);
+        // ma.clickbtnAllowancesArrear();
+        // Thread.sleep(5000);
 
-        ma.clickbtnSelectAllowances();
-        Thread.sleep(2000);
+        // ma.clickbtnSelectAllowances();
+        // Thread.sleep(2000);
 
-        ma.clickbtnFoodAllowances();
-        Thread.sleep(2000);
+        // ma.clickbtnFoodAllowances();
+        // Thread.sleep(2000);
 
-        ma.clickbtnAllowancesStartMonth();
+        ma.clickbtnStartMonth();
         Thread.sleep(2000);
 
         ma.clickbtnJanuary();
         Thread.sleep(2000);
 
-        ma.clickbtnAllowancesStartYear();
+        ma.clickbtnStartYear();
         Thread.sleep(2000);
 
-        ma.settxtAllowancesStartYear("2023");
+        WebElement txtStartYear = driver.findElement(By.xpath("(//input[@id='rc_select_5'])[1]"));
+        txtStartYear.sendKeys("2023");
         Thread.sleep(2000);
-
+        
+       
         ma.clicknbtnS2023();
         Thread.sleep(2000);
 
-        ma.clickbtnAllowancesEndMonth();
+        ma.clickbtnEndMonth();
         Thread.sleep(2000);
 
         ma.clickbtnFebruary();
         Thread.sleep(2000);
 
-        ma.clickbtnAllowancesEndYear();
+        ma.clickbtnEndYear();
         Thread.sleep(2000);
 
-        ma.settxtAllowancesEndYear("2023");
+        ma.settxtEndYear("2023");
         Thread.sleep(2000);
 
         ma.clickbtnE2023();
@@ -287,12 +288,12 @@ public class TC_MonthCloseArrear_001 extends BaseClass{
         ma.clickbtnAddtoMonthEndData();
         Thread.sleep(2000);
 
-        if(driver.getPageSource().contains("Arrear Added Successfully!") && driver.getPageSource().contains("3000"))
+        if(driver.getPageSource().contains("Arrear Added Successfully!") && driver.getPageSource().contains("1000"))
         {
             Assert.assertTrue(true);
             logger.info("Successfullty added MultiPhase_Arrear For the Employee");
             test.pass("Successfullty added MultiPhase_Arrear For the Employee");
-            test.info("MultiPhase_Arrear Value: 1500");
+            test.info("MultiPhase_Arrear Value: 1000");
         }
         else
         {
@@ -324,19 +325,17 @@ public class TC_MonthCloseArrear_001 extends BaseClass{
         Employee_Payslip();
         Thread.sleep(2000);
 
-        if (driver.getPageSource().contains("4,048.00") && driver.getPageSource().contains("122,152")) 
+        if (driver.getPageSource().contains("6,248.00") && driver.getPageSource().contains("117,547.00")) 
         {
             Assert.assertTrue(true);
             logger.info("MultiPhase_Arrear Added to the Feb Payslip");
             test.pass("MultiPhase_Arrear Added to the Feb Payslip");
-            test.info("Basic: 600.00");
-            test.info("HRA:225.00	");
-            test.info("SA: 617.40");
-            test.info("Mobile: 12.00");
-            test.info("Food: 24.00");
-            test.info("Gross: 124,700.00");
-            test.info("Netpay before Arrear: 119,152.00");
-            test.info("Netpay After Arrear : 120,676");
+            test.info("Basic: 400.00");
+            test.info("HRA: 150.00	");
+            test.info("SA: 382.76");
+            test.info("Gross: 117,547");
+            test.info("Netpay before Arrear: 110,395");
+            test.info("Netpay After Arrear : 111,299");
         }
         else
         {

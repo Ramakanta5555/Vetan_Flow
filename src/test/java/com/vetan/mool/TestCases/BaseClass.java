@@ -289,7 +289,7 @@ public void Employee_Payslip() throws InterruptedException
         Thread.sleep(2000);
 
         RE.clickbtnRamakantaSamalEmployee();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
 
         RE.clickbtnPayslipandForms();
         Thread.sleep(2000);
