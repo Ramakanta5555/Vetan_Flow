@@ -8,9 +8,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.vetan.mool.PageObjects.MonthCloseArrearPage;
 import com.vetan.mool.TestCases.BaseClass;
+import lombok.extern.slf4j.Slf4j;
 
-
+@Slf4j
 public class TC_MonthCloseArrear_001 extends BaseClass{
+    
     
     @Test
     public void MonthCloseArrear() throws InterruptedException
@@ -111,8 +113,8 @@ public class TC_MonthCloseArrear_001 extends BaseClass{
       else
         {
             // Assert.assertTrue( false);
-            logger.info("Error: Unable to run the Payroll");
             test.fail("Unable to run the Payroll");
+            log.info("Error: Unable to run the Payroll");
         }
         
 
